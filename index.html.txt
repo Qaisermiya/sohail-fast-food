@@ -1,0 +1,56 @@
+﻿index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sohail Fast Food - Menu</title>
+    <style>
+        body { font-family: 'Arial', sans-serif; margin: 0; background-color: #f4f4f4; text-align: center; color: #333; }
+        header { background-color: #e67e22; color: white; padding: 20px; font-size: 24px; font-weight: bold; }
+        .container { padding: 20px; }
+        .item-card { background: white; border-radius: 15px; margin-bottom: 20px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        .item-card img { width: 100%; height: 200px; object-fit: cover; }
+        .item-info { padding: 15px; }
+        .item-info h3 { margin: 5px 0; color: #d35400; }
+        .price { font-weight: bold; color: #27ae60; font-size: 18px; }
+        .btn { background-color: #25d366; color: white; padding: 15px 30px; text-decoration: none; border-radius: 50px; display: inline-block; margin: 20px 0; font-weight: bold; font-size: 18px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+    </style>
+</head>
+<body>
+
+<header>Sohail Fast Food 🍔🍕</header>
+
+<div class="container">
+    <p>Gujranwala's Best Fast Food!</p>
+
+    <div class="item-card">
+        <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=500" alt="Zinger Burger">
+        <div class="item-info">
+            <h3>Zinger Burger</h3>
+            <p class="price">Rs. 250</p>
+        </div>
+    </div>
+
+    <div class="item-card">
+        <img src="https://images.unsplash.com/photo-1561651823-34fed0225304?w=500" alt="Shawarma">
+        <div class="item-info">
+            <h3>Special Chicken Shawarma</h3>
+            <p class="price">Rs. 180</p>
+        </div>
+    </div>
+
+    <div class="item-card">
+        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500" alt="Pizza">
+        <div class="item-info">
+            <h3>Chicken Tikka Pizza</h3>
+            <p class="price">Rs. 850</p>
+        </div>
+    </div>
+
+    <a href="https://wa.me/923004509597?text=I%20want%20to%20order%20food" class="btn">Order on WhatsApp ✅</a>
+</div>
+
+</body>
+</html>
+
