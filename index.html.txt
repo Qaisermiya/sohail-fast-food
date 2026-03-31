@@ -1,0 +1,44 @@
+﻿index.html
+
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sohail Bypass - Lahore</title>
+    <style>
+        body { background: #000; color: #fff; font-family: sans-serif; text-align: center; margin: 0; }
+        .wa-header { background: #25d366; color: white; padding: 15px; display: block; text-decoration: none; font-weight: bold; font-size: 18px; border-bottom: 2px solid #fff; }
+        .navbar { background: #1a1a1a; padding: 15px; border-bottom: 3px solid #ffcc00; display: flex; justify-content: center; gap: 10px; }
+        .nav-btn { background: #ffcc00; color: #000; padding: 10px 18px; text-decoration: none; border-radius: 20px; font-weight: bold; }
+        .hero { padding: 60px 20px; background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=1000'); background-size: cover; }
+        h1 { color: #ffcc00; font-size: 45px; margin: 0; }
+        .deal-box { border: 2px solid #ffcc00; margin: 25px; padding: 30px; border-radius: 30px; background: #111; box-shadow: 0 0 15px #ffcc00; }
+        .price { font-size: 60px; color: #ffcc00; font-weight: 900; display: block; }
+    </style>
+</head>
+<body>
+
+    <a href="https://wa.me/9234509597" class="wa-header">ORDER NOW: 03450 9597</a>
+
+    <div class="navbar">
+        <a href="index.html" class="nav-btn">HOME</a>
+        <a href="menu.html" class="nav-btn">VIP MENU</a>
+        <a href="quality.html" class="nav-btn">QUALITY</a>
+    </div>
+
+    <div class="hero">
+        <h1>SOHAIL BYPASS</h1>
+        <p style="color:#ffcc00; font-weight:bold;">FAST FOOD • LAHORE</p>
+    </div>
+
+    <div class="deal-box">
+        <h2 style="margin:0;">SUPER DEAL</h2>
+        <span class="price">450/-</span>
+        <p>Premium Taste - Fast Delivery</p>
+        <a href="https://wa.me/9234509597" class="nav-btn" style="padding: 15px 40px; font-size: 20px;">WHATSAPP ORDER</a>
+    </div>
+
+</body>
+</html>
+
