@@ -1,0 +1,105 @@
+﻿index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sohail Fast Food - Official VIP Website</title>
+    <style>
+        :root { --gold: #f39c12; --dark: #111; --green: #25d366; }
+        body { font-family: 'Poppins', 'Arial', sans-serif; margin: 0; background-color: #000; color: white; text-align: center; }
+        
+        /* Navigation Menu */
+        nav { background: #222; padding: 15px; position: sticky; top: 0; z-index: 1000; border-bottom: 3px solid var(--gold); display: flex; justify-content: center; gap: 10px; }
+        nav button { background: none; border: 1px solid var(--gold); color: var(--gold); padding: 10px 18px; border-radius: 20px; cursor: pointer; font-weight: bold; transition: 0.3s; font-size: 14px; }
+        nav button:hover { background: rgba(243, 156, 18, 0.2); }
+        nav button.active { background: var(--gold); color: black; }
+
+        .page { display: none; padding: 20px; animation: fadeIn 0.5s; }
+        .page.active { display: block; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+        header { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800'); background-size: cover; padding: 70px 20px; border-radius: 0 0 30px 30px; border-bottom: 5px solid var(--gold); }
+        
+        .vip-card { background: #1a1a1a; border-radius: 20px; margin-bottom: 30px; overflow: hidden; border: 2px solid #333; position: relative; transition: 0.3s; }
+        .vip-card img { width: 100%; height: 250px; object-fit: cover; }
+        
+        .info { padding: 25px; text-align: left; }
+        .info h3 { margin: 0; font-size: 26px; color: var(--gold); text-transform: uppercase; letter-spacing: 1px; }
+        .info p { color: #bbb; font-size: 15px; margin: 10px 0; line-height: 1.6; }
+        
+        .menu-list { list-style: none; padding: 0; margin-top: 20px; border-top: 1px solid #444; }
+        .menu-list li { display: flex; justify-content: space-between; padding: 15px 0; border-bottom: 1px solid #333; }
+        .menu-list li:last-child { border-bottom: none; }
+        .item-name { color: #fff; font-size: 18px; font-weight: bold; }
+        .item-price { color: var(--green); font-size: 18px; font-weight: bold; }
+        .flavor { color: #f1c40f; font-style: italic; font-size: 14px; margin-left: 10px; }
+
+        /* Floating VIP WhatsApp Button */
+        .order-now { position: fixed; bottom: 20px; left: 10%; right: 10%; background: var(--green); color: white; padding: 18px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 18px; box-shadow: 0 10px 20px rgba(0,0,0,0.5); z-index: 1000; display: flex; align-items: center; justify-content: center; border: 2px solid white; transition: 0.3s; }
+        .order-now:active { transform: scale(0.95); }
+        .footer-space { height: 100px; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <button onclick="showPage('home')" id="btn-home" class="active">Home</button>
+    <button onclick="showPage('menu')" id="btn-menu">VIP Menu</button>
+    <button onclick="showPage('about')" id="btn-about">Quality</button>
+</nav>
+
+<div id="home" class="page active">
+    <header>
+        <h1 style="font-size: 45px; color: var(--gold); text-transform: uppercase;">SOHAIL FAST FOOD</h1>
+        <p>Premium Taste • VIP Service • Gujranwala</p>
+    </header>
+    <div style="padding: 20px;">
+        <h2 style="color: var(--gold); text-transform: uppercase;">Welcome to Our VIP Point</h2>
+        <p>Pure Quality, Great Taste. Ek baar khayenge, baar baar aayenge!</p>
+        
+        <div class="vip-card">
+           <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=600" alt="Burger">
+        </div>
+        <div class="vip-card">
+           <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600" alt="Pizza">
+        </div>
+        <div class="vip-card">
+           <img src="https://images.unsplash.com/photo-1561651823-34fed0225304?w=600" alt="Shawarma">
+        </div>
+    </div>
+</div>
+
+<div id="menu" class="page">
+    <h2 style="color: var(--gold); text-transform: uppercase;">Full VIP Menu Card</h2>
+    
+    <div class="vip-card">
+        <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=600" alt="Zinger">
+        <div class="info">
+            <h3>Master Burgers</h3>
+            <p>Fresh Breast Fillet, Crispy Coating, VIP Mayo.</p>
+            <ul class="menu-list">
+                <li><span class="item-name">Crispy Zinger Burger</span> <span class="item-price">Rs. 250</span></li>
+                <li><span class="item-name">Zinger Cheese Burger</span> <span class="item-price">Rs. 300</span></li>
+                <li><span class="item-name">Double Patty Zinger</span> <span class="item-price">Rs. 450</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="vip-card">
+        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600" alt="Pizza">
+        <div class="info">
+            <h3>VIP Pizza <span class="flavor">(Tikka / Fajita / BBQ)</span></h3>
+            <p>Loaded with Cheese, Spicy Chicken, and Fresh Veggies.</p>
+            <ul class="menu-list">
+                <li><span class="item-name">Small VIP Pizza</span> <span class="item-price">Rs. 450</span></li>
+                <li><span class="item-name">Medium VIP Pizza</span> <span class="item-price">Rs. 850</span></li>
+                <li><span class="item-name">Large VIP Pizza</span> <span class="item-price">Rs. 1300</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="vip-card">
+        <img src="
+
